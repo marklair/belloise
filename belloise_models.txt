@@ -1,0 +1,97 @@
+belloise models
+
+Auth Logic
+
+user
+	has many posts
+	has many comments
+
+	attributes
+		id
+		username
+		password		
+		firstname
+		lastname
+		phone
+		email
+		role
+		created
+		modified
+
+
+
+Other models
+
+Post
+	has many comments
+	belongs to user
+
+	attributes
+		id
+		user_id
+		created
+		modified
+		title
+		body
+		
+
+
+	
+comment
+	belongs to post
+	belongs to user
+
+	attributes
+		id
+		user_id
+		post_id
+		title
+		body
+		created
+		modified
+		
+
+customer
+	has many items
+	
+	attributes
+		id
+		first_name
+		last_name
+		address
+		city
+		state
+		zip
+		phone
+		email
+		dl_nbr
+		dl_img
+		created
+		modified
+
+
+
+
+item
+	belongs to customer
+	belongs to item_type
+
+	attributes
+		id
+		item_type_id
+		customer_id
+		make
+		model
+		serial_nbr
+		marked_price
+		low_price
+		status
+		created
+		modified
+
+item_type
+	has many items
+
+	attributes
+		id
+		name
