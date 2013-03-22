@@ -68,6 +68,7 @@ class ItemsController extends AppController {
 		$itemtypes = $this->Item->Itemtype->find('list');
 		$customers = $this->Item->Customer->find('list');
 		$this->set(compact('itemtypes', 'customers'));
+
 	}
 
 /**

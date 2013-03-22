@@ -20,11 +20,3 @@
 ?>
 
 
-<div class="grid_4">
-	<div class="box menu">
-		<?php
-			echo $this->element('navbar');
-		?>
-	</div>
-</div>
-

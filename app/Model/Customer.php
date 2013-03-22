@@ -12,6 +12,16 @@ class Customer extends AppModel {
  *
  * @var array
  */
+
+
+	//displays first and last name instead of id by using virtual field and then assigning the displayField to that.
+	public $virtualFields = array(
+	    'name' => "CONCAT('#', Customer.id, ' - ', Customer.firstname, ' ', Customer.lastname)"
+	);
+	var $displayField = 'name';
+
+
+
 	public $validate = array(
 		'firstname' => array(
 			'notempty' => array(
