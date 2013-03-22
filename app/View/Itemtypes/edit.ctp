@@ -1,7 +1,7 @@
 <div class="itemtypes form">
 <?php echo $this->Form->create('Itemtype');?>
 	<fieldset>
-		<legend><?php echo __('Edit Itemtype'); ?></legend>
+		<h2><legend><?php echo __('Edit Item Type'); ?></legend></h2>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('name');
