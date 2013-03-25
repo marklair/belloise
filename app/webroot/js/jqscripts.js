@@ -6,4 +6,5 @@ $(document).ready(function() {
   $('#flashMessage').fadeOut(2000, function() {
     // Animation complete.
   });
+  //$("#example").dataTable();
 });

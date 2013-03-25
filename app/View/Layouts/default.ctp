@@ -10,7 +10,7 @@
 		//echo $this->Html->css(array('reset', 'text', 'grid', 'layout', 'nav'));
 		echo '<!--[if IE 6]>'.$this->Html->css('ie6').'<![endif]-->';
 		echo '<!--[if IE 7]>'.$this->Html->css('ie').'<![endif]-->';
-		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js', 'adapthack.js', 'adapt.min.js', 'jqscripts.js'));
+		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js', 'adapthack.js', 'adapt.min.js', 'jqscripts.js', 'jquery.dataTables.js'));
 		echo '	<script>
 		$(document).bind("mobileinit", function () {
 			$.mobile.ajaxEnabled = false;
